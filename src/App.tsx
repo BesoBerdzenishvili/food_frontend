@@ -8,8 +8,6 @@ const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const Container = styled("div", {
-    border: "1px solid green",
-
     position: "absolute",
     top: "50%",
     left: "50%",

@@ -5,6 +5,17 @@ const Container = styled("div", {
   marginBottom: 19,
 });
 
+const Input = styled("input", {
+  backgroundColor: "orange",
+  outline: "none",
+  border: "none",
+  borderRadius: 8,
+  padding: "11px 8px",
+  width: 570,
+  fontSize: 19,
+  color: "magenta",
+});
+
 type SearchProps = {
   searchQuery: string;
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
@@ -17,7 +28,7 @@ const Search: React.FC<SearchProps> = ({ searchQuery, setSearchQuery }) => {
 
   return (
     <Container>
-      <input
+      <Input
         type="text"
         value={searchQuery}
         onChange={handleInputChange}
