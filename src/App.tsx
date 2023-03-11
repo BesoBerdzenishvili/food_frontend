@@ -1,5 +1,10 @@
+import { AddForm } from "./components/AddForm";
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <AddForm />
+    </div>
+  );
 }
 
 export default App;
