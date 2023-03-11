@@ -14,6 +14,10 @@ const Container = styled("div", {
   backgroundColor: "orange",
   padding: "16px",
   borderRadius: "8px",
+
+  maxWidth: 281,
+  width: "100%",
+  margin: 4,
 });
 
 const Image = styled("img", {

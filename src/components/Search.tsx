@@ -1,4 +1,9 @@
 import React from "react";
+import { styled } from "../stitches.config";
+
+const Container = styled("div", {
+  marginBottom: 19,
+});
 
 type SearchProps = {
   searchQuery: string;
@@ -11,9 +16,14 @@ const Search: React.FC<SearchProps> = ({ searchQuery, setSearchQuery }) => {
   };
 
   return (
-    <div>
-      <input type="text" value={searchQuery} onChange={handleInputChange} />
-    </div>
+    <Container>
+      <input
+        type="text"
+        value={searchQuery}
+        onChange={handleInputChange}
+        autoFocus
+      />
+    </Container>
   );
 };
 
