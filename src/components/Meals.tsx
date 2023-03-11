@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Meal from "./Meal";
-import { Food } from "../types";
+import { Food } from "../utils/types";
 
 type MealsProps = {
   searchQuery: string;
