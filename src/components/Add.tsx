@@ -14,6 +14,7 @@ const CircleButton = styled("button", {
   fontSize: "24px",
   border: "none",
   cursor: "pointer",
+  marginTop: 14,
   "&:hover": {
     backgroundColor: "#FFA000",
   },
