@@ -10,7 +10,9 @@ const Meals: React.FC<MealsProps> = ({ searchQuery }) => {
   const [foods, setFoods] = useState<Food[]>([]);
 
   useEffect(() => {
-    const url = searchQuery ? `/api/search?query=${searchQuery}` : "/api/foods";
+    const url = searchQuery
+      ? `/api/search?query=${searchQuery}`
+      : "https://food-service-17cn.onrender.com/api/foods";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setFoods(data))
@@ -20,7 +22,7 @@ const Meals: React.FC<MealsProps> = ({ searchQuery }) => {
   return (
     <div>
       {foods.map((food) => (
-        <Meal key={food.id} food={food} />
+        <Meal key={food._id} food={food} />
       ))}
     </div>
   );

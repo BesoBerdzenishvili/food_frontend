@@ -82,16 +82,19 @@ export const AddForm: React.FC<AddFormProps> = ({ onClose }) => {
       img,
     };
     try {
-      const response = await fetch("/api/foods", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://food-service-17cn.onrender.com/api/foods",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
       const result = await response.json();
       console.log(result);
-      // onClose();
+      onClose();
     } catch (error) {
       console.error(error);
     }

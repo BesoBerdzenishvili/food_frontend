@@ -1,6 +1,6 @@
 {
-  "name": "frontend",
   "proxy": "https://food-service-17cn.onrender.com",
+  "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
