@@ -8,7 +8,6 @@ type MealsProps = {
 };
 
 const Container = styled("div", {
-  border: "1px solid magenta",
   display: "flex",
   justifyContent: "center",
   flexWrap: "wrap",
