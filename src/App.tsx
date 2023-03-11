@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Search from "./components/Search";
 import Meals from "./components/Meals";
-import { Add } from "./components/Add";
+import Add from "./components/Add";
 
 const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");

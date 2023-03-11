@@ -19,7 +19,7 @@ const CircleButton = styled("button", {
   },
 });
 
-export const Add = () => {
+const Add = () => {
   const [showAddForm, setShowAddForm] = useState(false);
 
   const handleClick = () => {
@@ -33,3 +33,4 @@ export const Add = () => {
     </>
   );
 };
+export default Add;
